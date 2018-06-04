@@ -1,5 +1,33 @@
-img {
+.hop {
     width: 100px;
+    animation-name: hop;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes hop {
+    0%{
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(0, -15px);
+    }
+
+    20% {
+        transform: translate(0, 0px);
+    }
+
+    30% {
+        transform: translate(0, -20px);
+    }
+
+    40% {
+        transform: translate(0, 0px);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
 }
 
 nav {
@@ -11,7 +39,9 @@ nav {
 ul {
     height: 17px;
     overflow: hidden;
+    transition: 1s;
 }
+
 ul:hover {
     height: 200px;
 }
@@ -19,6 +49,24 @@ ul:hover {
 li{
     font-size: 30px;
 }
+
+.title{
+    position: relative;
+    transition: 2s;
+    right: 0;
+}
+
+.content-picture{
+    width: 300px;
+    position: relative;
+    transition: 3s;
+    right: 0;
+}
+
+desc {
+    position: relative;
+}
+
 
 @media(min-width: 600px){
     h2{
@@ -31,4 +79,13 @@ li{
         justify-content: space-between;
         width: 60vw;
     }
+
+    .title {
+        right: -500px;
+    }
+
+    .content-picture {
+        right: -500px;
+    }
+
 }
