@@ -1,0 +1,34 @@
+img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+}
+
+ul {
+    height: 17px;
+    overflow: hidden;
+}
+ul:hover {
+    height: 200px;
+}
+
+li{
+    font-size: 30px;
+}
+
+@media(min-width: 600px){
+    h2{
+        display: hidden;
+    }
+
+    ul {
+        overflow: visible;
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+    }
+}
